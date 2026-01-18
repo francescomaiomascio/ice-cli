@@ -1,16 +1,29 @@
 # ICE CLI
+## Command-Line Interface for the ICE Ecosystem
 
-[![ICE Ecosystem](https://img.shields.io/badge/ICE-Ecosystem-8FB9FF?style=flat)](#)
-[![Docs](https://img.shields.io/badge/docs-ICE--Docs-8FB9FF?style=flat)](https://github.com/francescomaiomascio/ice-docs)
-[![Status](https://img.shields.io/badge/status-pre--release-6B7280?style=flat)](#)
-[![License](https://img.shields.io/badge/license-MIT-7A7CFF?style=flat)](#)
+ICE CLI defines the **command-line interaction surface**
+of the ICE ecosystem.
 
-ICE CLI is a **command-line interface placeholder** for the ICE ecosystem.
+It is intended to provide a **scriptable, automatable, and inspectable**
+interface for interacting with ICE systems,
+complementing graphical environments such as **ICE Studio**.
 
-It is intended to provide a developer-facing interface for interacting with ICE
-systems once ICE Studio and the underlying runtime components reach maturity.
+ICE CLI is not a primary control plane.
+It is a **convenience interface built on top of existing ICE domains**.
 
-ICE CLI is currently in a **pre-release, preparatory phase**.
+---
+
+## Position in the ICE Ecosystem
+
+ICE CLI is a **downstream interaction tool**.
+
+- Conceptual authority is defined by **ICE Foundation**
+- Execution and enforcement are handled by **ICE Runtime / Engine**
+- Intelligence and reasoning belong to **ICE AI**
+- Interaction contracts are defined by **ICE API** and **ICE Protocols**
+
+ICE CLI does not introduce new semantics.
+It exposes existing ones.
 
 ---
 
@@ -18,61 +31,118 @@ ICE CLI is currently in a **pre-release, preparatory phase**.
 
 ICE CLI exists to:
 
-- Explore command-line interaction patterns for ICE
-- Prototype developer workflows and commands
-- Prepare the ground for future automation and scripting
-- Complement ICE Studio with a terminal-based interface
+- provide terminal-based access to ICE systems
+- support automation and scripting workflows
+- enable inspection and diagnostics without a UI
+- prototype developer-facing commands and flows
+- complement ICE Studio for advanced users
 
-This repository does **not** yet define a stable CLI tool.
+It is designed for **developers and system operators**.
+
+---
+
+## What ICE CLI Is
+
+ICE CLI is:
+
+- a **developer-facing interface**
+- a **thin interaction layer**
+- a **tool for inspection, control, and automation**
+- a **bridge between ICE systems and shell environments**
+
+It makes ICE accessible from scripts and pipelines
+without bypassing governance.
+
+---
+
+## What ICE CLI Is Not
+
+ICE CLI is **not**:
+
+- an execution engine
+- an authority layer
+- a substitute for Runtime or Engine
+- a source of business logic
+- a shortcut around ICE constraints
+
+Commands do not decide.
+Commands do not authorize.
+Commands do not execute independently.
 
 ---
 
 ## Scope
 
-Planned areas may include:
+Planned and exploratory areas may include:
 
-- System and runtime inspection commands
-- Agent and workflow interaction
-- Analytics and insights display
-- Guided and interactive CLI flows
-- Shell completion and developer ergonomics
+- runtime and system inspection
+- agent and workflow interaction
+- execution status and diagnostics
+- analytics and summaries
+- guided and interactive CLI flows
+- shell completion and ergonomics
+- integration with CI/CD and automation tools
 
-All functionality is provisional and subject to redesign.
+Exact command structure and scope
+are intentionally left flexible.
 
 ---
 
-## Design Notes
+## Stability and Evolution
 
-- The CLI is not feature-complete
-- Command structure may change
-- Flags, commands, and output formats are unstable
-- Final scope depends on ICE Studio evolution
+ICE CLI is currently **pre-release and preparatory**.
 
-This repository prioritizes **experimentation and preparation**.
+- command structure is not stable
+- flags and output formats may change
+- workflows are subject to redesign
+- backward compatibility is not guaranteed
+
+This is expected.
+
+CLI design depends on
+the maturation of Runtime, Engine, and Studio.
 
 ---
 
 ## Usage
 
-ICE CLI is **not intended for production use**.
+ICE CLI is **not intended for production use** at this stage.
 
-It will be introduced only after:
-- ICE Studio stabilizes
-- Core runtime and engine interfaces mature
-- CLI workflows are clearly defined
+It will become a supported interface only after:
 
-Until then, this repository serves as a placeholder and sandbox.
+- core ICE domains stabilize
+- interaction patterns are validated
+- governance and authority boundaries are fully exercised
+
+Until then, this repository functions as
+a **design and experimentation space**.
+
+---
+
+## Canonical Status
+
+ICE CLI is **non-authoritative**.
+
+If this repository were removed,
+the ICE ecosystem would remain valid and complete.
+
+ICE CLI exists to make ICE *accessible*, not *true*.
 
 ---
 
 ## Status
 
-This project is in a **pre-release, preparatory stage**.
-Expect breaking changes and incomplete functionality.
+ICE CLI is in a **pre-release phase**.
+
+Expect rapid iteration and change.
 
 ---
 
-## License
+## Notes
 
-This project is licensed under the terms of the MIT license.
-See the `LICENSE` file for details.
+Graphical interfaces help humans explore.
+
+Command-line interfaces help humans automate.
+
+ICE CLI exists for the second case —
+when understanding is already earned.
